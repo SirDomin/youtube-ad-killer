@@ -1,0 +1,18 @@
+{
+  "name": "Youtube Ad killer",
+  "description": "fuck youtube",
+  "version": "21.3.7",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "run_at": "document_start",
+      "js": ["launch.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "64": "/images/icon.png"
+    }
+  }
+}
