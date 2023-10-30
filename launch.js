@@ -18,12 +18,13 @@ class AdBlocker{
       document.querySelector('div#main-container.style-scope.ytd-promoted-video-renderer'),
       document.querySelector('ytd-in-feed-ad-layout-renderer'),
       document.querySelector('.ytd-video-masthead-ad-v3-renderer'),
+      document.querySelector('ytd-engagement-panel-section-list-renderer'),
     ];
 
     sideAds.forEach(ad => {
       if (ad) {
         if (this.debug === true) {
-          console.log('side ad removed!');
+          console.log('Side ad removed!');
         }
 
         ad.remove();
@@ -43,7 +44,9 @@ class AdBlocker{
       video.currentTime = video.duration;
       skipAdButton?.click();
 
-      console.log('Ad detected, skipping')
+      if (this.debug) {
+        console.log('Ad detected, skipping')
+      }
     }
   }
 }
