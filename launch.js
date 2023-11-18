@@ -19,6 +19,9 @@ class AdBlocker{
       document.querySelector('ytd-in-feed-ad-layout-renderer'),
       document.querySelector('.ytd-video-masthead-ad-v3-renderer'),
       document.querySelector('ytd-engagement-panel-section-list-renderer'),
+      document.querySelector('ytd-merch-shelf-renderer'),
+      document.querySelector('ytd-banner-promo-renderer'),
+      document.querySelector('tp-yt-paper-dialog'),
     ];
 
     sideAds.forEach(ad => {
