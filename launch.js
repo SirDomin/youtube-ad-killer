@@ -22,7 +22,9 @@ class AdBlocker{
       document.querySelector('ytd-merch-shelf-renderer'),
       document.querySelector('ytd-banner-promo-renderer'),
       document.querySelector('tp-yt-paper-dialog'),
-      document.querySelector('ytp-ad-module'),
+      document.querySelector('.ytp-ad-module'),
+      document.querySelector('.ytp-ad-action-interstitial'),
+      document.querySelector('ytp-ad-action-interstitial'),
     ];
 
     sideAds.forEach(ad => {
